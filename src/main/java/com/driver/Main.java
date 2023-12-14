@@ -5,11 +5,11 @@ public class Main {
 public static void main(String args[]){
 
 
-     B one=new B();
-    String a= one.meth();
-     String b=one.meth();
-     System.out.println(a);
-    System.out.println(b);
+     B obj=new B();
+    String first= obj.meth();
+    System.out.print(first);
+
+
     }
 
   
@@ -21,8 +21,9 @@ class A{
 }
 
 class B extends A{
-    @Override
+
     String meth(){
+
         return "Method is overridden in Extendend class B";
     }
 
